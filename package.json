@@ -1,0 +1,12 @@
+{
+  "name": "your-tribe-for-life-profile-card",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "liquidjs": "^10.29.0"
+  }
+}
