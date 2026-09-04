@@ -1,6 +1,7 @@
+{% render 'partials/head.liquid' %}
+{% render 'partials/nav.liquid' %}
 <h1>Home</h1>
-
-{%  for person in persons %}  
-  <sub>{{ person.name }}</sub><br>
-  
-{% endfor %}
+{% render 'partials/intro.liquid' %} 
+{% render 'partials/overview.liquid', persons: persons %}
+{% render 'partials/detail.liquid', persons: persons %}
+{% render 'partials/foot.liquid' %}

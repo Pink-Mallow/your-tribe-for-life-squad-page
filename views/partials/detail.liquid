@@ -1,0 +1,17 @@
+<h1>Detail section</h1>
+<article color="red" width="350px" height="720px">
+  <p>person's stamp</p>
+  {%  for person in persons %}  
+  <p>{{ person.name }}</p>
+  <p>{{ person.fav_season }}</p>
+  <p>{{ person.bio }}</p>
+  <p>{{ person.fav_animal }}</p>
+  <a href="{{ person.profilecard }}">link to Profile Card</a>
+   <br>
+{% endfor %}
+</article>
+
+
+{% comment %} {% for person in persons %}
+  <p>{{ person.fav_animal }}</p>
+{% endfor %} {% endcomment %}
