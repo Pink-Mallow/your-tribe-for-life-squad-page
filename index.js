@@ -24,17 +24,6 @@ app.get('/', async (req, res) => {
   console.log(personResponseJSON);
 });
 
-// const details = "https://fdnd.directus.app/items/person?*.*.*&filter[squads][squad_id][cohort][_eq]=2627&fields=name,fav_season,bio,profilecard,fav_animal";
-// app.get('/', async (req, res) => {
-//   const personResponse = await fetch(details);
-//   const personResponseJSON = await personResponse.json();
-
-//   res.render('detail.liquid', {
-//     persons: personResponseJSON.data
-//   });
-//   console.log(personResponse);
-// });
-
 app.listen(3000, () => {
   console.log('Server is running at http://localhost:3000');
 });
