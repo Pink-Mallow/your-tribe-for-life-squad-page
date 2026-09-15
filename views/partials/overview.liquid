@@ -1,8 +1,39 @@
-<h1>overview</h1>
-<section class="overview">
-  <div class="card">
-
-  </div>
-</section>
-{% comment %} person.birthday {% endcomment %}
-{% comment %} show the person's website/portfolio {% endcomment %}
+<h1>overview</h1> 
+<article class="overview">
+  {% for person in persons %}
+    <div class="card">
+      <div class="img"></div>
+      <a href="{{ person.name | slugify }}">{{ person.name }}</a>
+    </div>
+  {% endfor %}
+</article> 
+    {% comment %} {% render 'partials/detail.liquid' persons: persons %}   {% endcomment %}
+<style>
+  .overview{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 126px;
+    height: 169px;
+    background: #F7D5BA;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  label{
+    text-align: center;
+    text-size: 20px;
+  }
+  .img{
+    margin-top: 5px;
+    width: 110px;
+    height: 124px;
+    /* border-color: #14293A; */
+    border-color: red;
+    background-color: red;
+    border-width: 2px;
+  }
+</style>
