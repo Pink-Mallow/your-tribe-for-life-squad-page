@@ -1,8 +1,6 @@
-<h1>Detail section</h1>
-<section color="red" width="350px" height="720px">
   {%  for person in persons %}  
-    <p>{{ person.name }}</p>
-    <p>{{ person.bio }}</p>
+    {% comment %} <p>{{ person.name }}</p> {% endcomment %}
+    {% comment %} <p>{{ person.bio }}</p>
     <p>{{ person.fav_animal }}</p>
     <P>Favorite season:
     {% if person.fav_season == "Winter" %}
@@ -18,6 +16,5 @@
     {% endif %}
     </P>
     <a href="{{ person.profilecard }}">link to Profile Card</a>
-    <br>
+    <br> {% endcomment %}
   {% endfor %}
-</section>
