@@ -1,20 +1,23 @@
   {%  for person in persons %}  
-    {% comment %} <p>{{ person.name }}</p> {% endcomment %}
-    {% comment %} <p>{{ person.bio }}</p>
+    {% comment %} <p>{{ person.name }}</p>
+    <strong>Bio</strong>
+    <p>{{ person.bio }}</p>
+    <strong>Favorite animal:</strong>
     <p>{{ person.fav_animal }}</p>
-    <P>Favorite season:
-    {% if person.fav_season == "Winter" %}
-      ❄️
-    {% elsif person.fav_season == "Lente" %}
-      🌷
-    {% elsif person.fav_season == "Zomer" %}
-      ☀️
-    {% elsif person.fav_season == "Herfst" %}
-      🍁
-    {% else %}
-      🌍
-    {% endif %}
-    </P>
+    <strong>Favorite season:</strong>
+    <p>
+      {% if person.fav_season == "Winter" %}
+        ❄️
+      {% elsif person.fav_season == "Lente" %}
+        🌷
+      {% elsif person.fav_season == "Zomer" %}
+        ☀️
+      {% elsif person.fav_season == "Herfst" %}
+        🍁
+      {% else %}
+        🌍
+      {% endif %}
+    </p>
     <a href="{{ person.profilecard }}">link to Profile Card</a>
     <br> {% endcomment %}
   {% endfor %}

@@ -1,6 +1,6 @@
   {% for person in persons %}
     <div class="card">
-      <div class="img"></div>
+      <img class="season-flower"> {%comment%} put seasonal flower in a component {%endcomment%}
       <a href="#{{ person.name | slugify }}" 
       class="slugify">
         {{ person.name }}
@@ -23,7 +23,7 @@
     text-align: center;
     text-size: 20px;
   }
-  .img{
+  img{
     margin-top: 5px;
     width: 110px;
     height: 124px;
