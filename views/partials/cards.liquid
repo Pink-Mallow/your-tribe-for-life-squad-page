@@ -1,8 +1,7 @@
   {% for person in persons %}
     <div class="card">
       <img class="season-flower"> {%comment%} put seasonal flower in a component {%endcomment%}
-      <a href="#{{ person.name | slugify }}" 
-      class="slugify">
+      <a href="#{{ person.name | slugify }}">
         {{ person.name }}
       </a>
     </div>

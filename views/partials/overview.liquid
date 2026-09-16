@@ -1,5 +1,5 @@
-<h1>overview</h1> 
-<article class="overview">
+<article id="overview">
+  <h1>overview</h1> 
   {% render 'partials/cards.liquid' persons: persons %}
 </article> 
 
@@ -8,10 +8,16 @@
 </section>
 
 <style>
-  .overview{
+  article{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     background: skyblue;
+  }
+  @media (min-width: 320px) {
+    article {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 </style>
