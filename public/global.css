@@ -1,0 +1,59 @@
+*::before *::after {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Primary Colours */
+  --prussian-blue: oklch(0.2721 0.0417 244.62), hsl(207 49 15 100%), #14293A;
+  --lilac: oklch(0.784 0.0437 286.82) hsl(242 26 77 100%) #B6B5D4;
+  --beige-orange: oklch(0.9622 0.0384 83.83) hsl(40 100 92 100%) #FFF1D6; 
+
+  /* Colour range */
+  --prussian-blue-medium: oklch(0.3599 0.0629 245.65) hsl(207 51 24 100%) #1E405C; 
+  --prussian-blue-light: oklch(0.4868 0.0938 245.35) hsl(207 55 37 100%) #2B6491; 
+
+  --lilac-medium: oklch(0.6392 0.101 284.51) hsl(242 38 65 100%) #8583C7; 
+  --lilac-dark: oklch(0.4618 0.176 278.52) hsl(242 46 49 100%) #4844B7;
+
+  --beige-orange-medium: oklch(0.8743 0.1136 83.01) hsl(40 93 73 100%) #FACF7B; 
+  --beige-orange-dark: oklch(0.7998 0.1702 72.65) hsl(40 100 51 100%) #FFA903;
+
+  /* Border colour */
+  --border-colour: oklch(0.6354 0.0047 56.330) hsl(27 2 54 100%) #8D8A88; 
+
+  /* Home Background */
+  --warm-creme: oklch(0.884 0.0405 58.74), hsl(26 58 84 100%), #EED3BF;
+}
+
+body {
+  background-color: var(--warm-creme);
+}
+
+/* Nav */
+
+
+
+/* Intro */
+
+
+
+/* Overview */
+article {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* background-color: var(--prussian-blue); */
+}
+.card {
+  background-color: var(--beige-orange);
+}
+  @media (min-width: 320px) {
+    article {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+
+/* Detail */

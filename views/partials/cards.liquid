@@ -1,17 +1,17 @@
-  {% for person in persons %}
-    <div class="card">
-      <img class="season-flower"> {%comment%} put seasonal flower in a component {%endcomment%}
-      <a href="#{{ person.name | slugify }}">
-        {{ person.name }}
-      </a>
-    </div>
-  {% endfor %}
+{% for person in persons %}
+  <div class="card">
+    <img class="season-flower"> {%comment%} put seasonal flower in a component {%endcomment%}
+    <a href="#{{ person.name | slugify }}">
+      {{ person.name }}
+    </a>
+  </div>
+{% endfor %}
 
 <style>
   .card{
     width: 126px;
     height: 169px;
-    background-color: #F7D5BA;
+    /* background-color: #F7D5BA; */
     border-radius: 2px;
     display: flex;
     flex-direction: column;
