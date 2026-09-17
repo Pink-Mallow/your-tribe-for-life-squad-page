@@ -1,0 +1,59 @@
+*::before *::after {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Primary Colours */
+  --prussian-blue: var(--prussian-blue-oklch, --prussian-blue-hsl, --prussian-blue-rgb);
+  --lilac: var(--lilac-oklch, --lilac-hsl, --lilac-rgb);
+  --beige-orange: var(--beige-orange-oklch, --beige-orange-hsl, --beige-orange-rgb); 
+
+  /* Colour range */
+  --prussian-blue-medium: var(--prussian-blue-medium-oklch, --prussian-blue-medium-hsl, --prussian-blue-medium-rgb); 
+  --prussian-blue-light: var(--prussian-blue-light-oklch, --prussian-blue-light-hsl, --prussian-blue-light-rgb); 
+
+  --lilac-medium: var(--lilac-medium-oklch, --lilac-medium-hsl, --lilac-medium-rgb); 
+  --lilac-dark: var(--lilac-dark-oklch, --lilac-dark-hsl, --lilac-dark-rgb);
+
+  --beige-orange-medium: var(--beige-orange-medium-oklch, --beige-orange-medium-hsl, --beige-orange-medium-rgb); 
+  --beige-orange-dark: var(--beige-orange-dark-oklch, --beige-orange-dark-hsl, --beige-orange-dark-rgb);
+
+  /* Border colour */
+  --border-colour: var(--border-colour-oklch, --border-colour-hsl, --border-colour-rgb); 
+
+  /* Home Background */
+  --warm-creme: var(--warm-creme-oklch, --warm-creme-hsl, --warm-creme-rgb);
+}
+
+body {
+  background-color: var(--warm-creme);
+}
+
+/* Nav */
+
+
+
+/* Intro */
+
+
+
+/* Overview */
+article {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* background-color: var(--prussian-blue); */
+}
+.card {
+  background-color: var(--beige-orange);
+}
+  @media (min-width: 320px) {
+    article {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+
+/* Detail */
