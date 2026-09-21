@@ -5,28 +5,34 @@
 
 :root {
   /* Primary Colours */
-  --prussian-blue: var(--prussian-blue-oklch, --prussian-blue-hsl, --prussian-blue-rgb);
-  --lilac: var(--lilac-oklch, --lilac-hsl, --lilac-rgb);
-  --beige-orange: var(--beige-orange-oklch, --beige-orange-hsl, --beige-orange-rgb); 
+  --prussian-blue: #14293A;
+  --lilac: #B6B5D4;
+  --beige-orange: #FFF1D6; 
 
   /* Colour range */
-  --prussian-blue-medium: var(--prussian-blue-medium-oklch, --prussian-blue-medium-hsl, --prussian-blue-medium-rgb); 
-  --prussian-blue-light: var(--prussian-blue-light-oklch, --prussian-blue-light-hsl, --prussian-blue-light-rgb); 
+  --prussian-blue-medium: #14293A; 
+  --prussian-blue-light: #2B6491; 
 
-  --lilac-medium: var(--lilac-medium-oklch, --lilac-medium-hsl, --lilac-medium-rgb); 
-  --lilac-dark: var(--lilac-dark-oklch, --lilac-dark-hsl, --lilac-dark-rgb);
+  --lilac-medium: #8583C7; 
+  --lilac-dark: #4844B7;
 
-  --beige-orange-medium: var(--beige-orange-medium-oklch, --beige-orange-medium-hsl, --beige-orange-medium-rgb); 
-  --beige-orange-dark: var(--beige-orange-dark-oklch, --beige-orange-dark-hsl, --beige-orange-dark-rgb);
+  --beige-orange-medium: #FACF7B; 
+  --beige-orange-dark: #FFA903;
 
   /* Border colour */
-  --border-colour: var(--border-colour-oklch, --border-colour-hsl, --border-colour-rgb); 
+  --border-colour: #8D8A88; 
 
   /* Home Background */
-  --warm-creme: var(--warm-creme-oklch, --warm-creme-hsl, --warm-creme-rgb);
+  --warm-creme: #EED3BF;
+
+  --h1-text-size: ;
+  --h2-text-size: ;
+  --h3-text-size: ;
+
+  --p-text-size: ;
 }
 
-body {
+main {
   background-color: var(--warm-creme);
 }
 
