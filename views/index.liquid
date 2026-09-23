@@ -26,8 +26,9 @@
       {% endfor %}
     </article>
 
-      {% comment %} {%  for person in persons %}   {% endcomment %}
-        {% comment %} <h2>{{ person.name }}</h2>
+    <section>
+      {%  for person in persons %}
+        <h2>{{ person.name }}</h2>
         <h3>Bio</h3>
         <p>{{ person.bio }}</p>
         <h3>Favorite animal:</h3>
@@ -47,8 +48,8 @@
           {% endif %}
         </p>
         <a href="{{ person.profilecard }}">link to Profile Card</a>
-        <br> 
-      {% endfor %} {% endcomment %}
+      {% endfor %} 
+    </section>
     </main>
   </body>
 </html>
