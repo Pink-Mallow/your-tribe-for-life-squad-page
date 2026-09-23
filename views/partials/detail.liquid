@@ -1,10 +1,10 @@
   {%  for person in persons %}  
-    {% comment %} <p>{{ person.name }}</p>
-    <strong>Bio</strong>
+    {% comment %} <h2>{{ person.name }}</h2>
+    <h3>Bio</h3>
     <p>{{ person.bio }}</p>
-    <strong>Favorite animal:</strong>
+    <h3>Favorite animal:</h3>
     <p>{{ person.fav_animal }}</p>
-    <strong>Favorite season:</strong>
+    <h3>Favorite season:</h3>
     <p>
       {% if person.fav_season == "Winter" %}
         ❄️
