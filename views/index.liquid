@@ -1,5 +1,54 @@
-{% render 'partials/head.liquid' %}
-{% render 'partials/nav.liquid' %}
-{% render 'partials/intro.liquid' %} 
-{% render 'partials/overview.liquid', persons: persons %}
-{% render 'partials/foot.liquid' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad Page 2627</title>
+    <link rel="stylesheet" href="/styling/global.css">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <span>2026-2027</span>
+      <a href="/">Overview</a>
+    </nav>
+    <main>
+      <h1>FDND</h1>
+
+    <article>
+      {% for person in persons %}
+        <div class="card">
+          <img class="season-flower"> {%comment%} put seasonal flower in a component {%endcomment%}
+          <a href="/">
+            {{ person.name }}
+          </a>
+        </div>
+      {% endfor %}
+    </article>
+
+      {% comment %} {%  for person in persons %}   {% endcomment %}
+        {% comment %} <h2>{{ person.name }}</h2>
+        <h3>Bio</h3>
+        <p>{{ person.bio }}</p>
+        <h3>Favorite animal:</h3>
+        <p>{{ person.fav_animal }}</p>
+        <h3>Favorite season:</h3>
+        <p>
+          {% if person.fav_season == "Winter" %}
+            ❄️
+          {% elsif person.fav_season == "Lente" %}
+            🌷
+          {% elsif person.fav_season == "Zomer" %}
+            ☀️
+          {% elsif person.fav_season == "Herfst" %}
+            🍁
+          {% else %}
+            🌍
+          {% endif %}
+        </p>
+        <a href="{{ person.profilecard }}">link to Profile Card</a>
+        <br> 
+      {% endfor %} {% endcomment %}
+    </main>
+  </body>
+</html>
