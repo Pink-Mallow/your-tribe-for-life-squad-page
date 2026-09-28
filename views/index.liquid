@@ -15,41 +15,42 @@
     <main>
       <h1>FDND</h1>
 
-    <article>
-      {% for person in persons %}
-        <div class="card">
-          <img class="season-flower"> {%comment%} put seasonal flower in a component {%endcomment%}
-          <a href="/">
-            {{ person.name }}
-          </a>
-        </div>
-      {% endfor %}
-    </article>
-
-    <section>
-      {%  for person in persons %}
-        <h2>{{ person.name }}</h2>
-        <h3>Bio</h3>
-        <p>{{ person.bio }}</p>
-        <h3>Favorite animal:</h3>
-        <p>{{ person.fav_animal }}</p>
-        <h3>Favorite season:</h3>
-        <p>
-          {% if person.fav_season == "Winter" %}
-            ❄️
-          {% elsif person.fav_season == "Lente" %}
-            🌷
-          {% elsif person.fav_season == "Zomer" %}
-            ☀️
-          {% elsif person.fav_season == "Herfst" %}
-            🍁
-          {% else %}
-            🌍
-          {% endif %}
-        </p>
-        <a href="{{ person.profilecard }}">link to Profile Card</a>
-      {% endfor %} 
-    </section>
+      <h2>Overview</h2>
+      <article>
+        {% for person in persons %}
+          <div class="card"> {%comment%} write article with class of card {%endcomment%}
+            <img class="season-flower"> {%comment%} put seasonal flower in a component {%endcomment%}
+            <a href="/">
+              {{ person.name }}
+            </a>
+          </div>
+        {% endfor %}
+      </article>
+      
+      <section>
+        {%  for person in persons %}
+          <h3>{{ person.name }}</h3>
+          <h4>Bio</h4>
+          <p>{{ person.bio }}</p>
+          <h4>Favorite animal:</h4>
+          <p>{{ person.fav_animal }}</p>
+          <h4>Favorite season:</h4>
+          <p>
+            {% if person.fav_season == "Winter" %}
+              ❄️
+            {% elsif person.fav_season == "Lente" %}
+              🌷
+            {% elsif person.fav_season == "Zomer" %}
+              ☀️
+            {% elsif person.fav_season == "Herfst" %}
+              🍁
+            {% else %}
+              🌍
+            {% endif %}
+          </p>
+          <a href="{{ person.profilecard }}">link to Profile Card</a>
+        {% endfor %} 
+      </section>
     </main>
   </body>
 </html>
