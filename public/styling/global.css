@@ -37,6 +37,23 @@ main {
 }
 
 /* Nav */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--prussian-blue);
+  transition-duration: 1s;
+  &:hover {
+    color: var(--prussian-blue-light);
+    text-decoration: underline;
+  }
+}
+span {
+  color: var(--prussian-blue);
+}
 
 /* Intro */
 
