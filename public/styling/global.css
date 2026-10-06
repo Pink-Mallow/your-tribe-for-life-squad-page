@@ -32,8 +32,21 @@
   --p-text-size: ;
 }
 
-main {
-  background-color: var(--warm-creme);
+@font-face {
+    font-family: "Cellofy";
+    src: url("/assets/font/Cellofy-Regular.woff2") format("woff2"),
+         url("/assets/font/Cellofy-Regular.woff") format("woff"),
+         url("/assets/font/Cellofy-Regular.ttf") format("truetype"),
+         url("/assets/font/Cellofy-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-stretch: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Cellofy", "Times New Roman", Times, serif;
+  font-size: 16px;
 }
 
 /* Nav */
