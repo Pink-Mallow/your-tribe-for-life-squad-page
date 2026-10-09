@@ -25,15 +25,15 @@
   /* Home Background */
   --warm-creme: #EED3BF;
 
-  --h1-text-size: ;
-  --h2-text-size: ;
-  --h3-text-size: ;
-
-  --p-text-size: ;
+  --title: 3.25rem;
+  --h2-size: 2.75rem;
+  --h3-size: 2.25rem;
+  --h4-size: 2rem;
+  --regular-text:  1rem;
 }
 
 @font-face {
-    font-family: "Cellofy";
+    font-family: "CellofyRegular";
     src: url("/assets/font/Cellofy-Regular.woff2") format("woff2"),
          url("/assets/font/Cellofy-Regular.woff") format("woff"),
          url("/assets/font/Cellofy-Regular.ttf") format("truetype"),
@@ -45,15 +45,22 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "Cellofy", "Times New Roman", Times, serif;
+  font-family: "CellofyRegular", "Times New Roman", Times, serif;
   font-size: 16px;
 }
 
 /* Nav */
 
 /* Intro */
+h1 {
+  font-size: var(--title);
+}
 
 /* Overview */
+h2 {
+  font-size: var(--h2-size);
+}
+
 article {
   display: flex;
   gap: 20px;
