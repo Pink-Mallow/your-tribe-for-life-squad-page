@@ -32,6 +32,10 @@
   --p-text-size: ;
 }
 
+html {
+  margin: 20px;
+}
+
 body {
   margin: 0;
 
@@ -88,12 +92,13 @@ a {
     color: var(--prussian-blue-light);
     text-decoration: underline;
   }
+  span {
+    font-size: clamp(16px, 75%, 25px);
+    color: var(--prussian-blue);
+    cursor:default;
+  }
 }
-span {
-  font-size: clamp(16px, 75%, 25px);
-  color: var(--prussian-blue);
-  cursor:default;
-}
+
 
 /* Intro */
 
