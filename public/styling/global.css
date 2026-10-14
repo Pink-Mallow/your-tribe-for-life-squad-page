@@ -44,8 +44,8 @@ body {
   font-family: fantasy;
   font-size: 16px;
 
-  --b: 6px;  /* border thickness*/
-  --s: 45px; /* size of the corner*/
+  --b: 4px;  /* border thickness*/
+  --s: 25px; /* size of the corner*/
   --g: 14px; /* the gap*/
   --c: var(--prussian-blue);
   --bs: 6px; /*border size*/
@@ -67,6 +67,21 @@ body {
     var(--_p,0%) calc(100% - var(--_p,0%));
   background-size: var(--s) var(--s);
   background-repeat: no-repeat;
+
+  @media (min-width: 26.563em) {
+    background-size: 1.875rem 1.875rem;
+  }
+  @media (min-width: 39.063em) {
+    background-size: 2.188rem 2.188rem;
+  }
+  /* Tablet */
+  @media (min-width: 48em) {
+    background-size: 2.5rem 2.5rem;
+  }
+  /* Laptop */
+  @media (min-width: 64em) {
+    background-size: 2.813rem 2.813rem;
+  }
 }
 
 main {
