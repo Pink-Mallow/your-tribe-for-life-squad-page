@@ -33,7 +33,7 @@
 }
 
 html {
-  margin: 20px;
+  margin: 40px;
 }
 
 body {
@@ -44,14 +44,14 @@ body {
   font-family: fantasy;
   font-size: 16px;
 
-  --b: 8px;  /* border thickness*/
+  --b: 6px;  /* border thickness*/
   --s: 45px; /* size of the corner*/
   --g: 14px; /* the gap*/
   --c: var(--prussian-blue);
-  --bs: 20px; /*border size*/
+  --bs: 6px; /*border size*/
 
   
-  padding: var(--s) 2px 0 2px;
+  /* padding: var(--s) 2px 0 2px; */
   border: calc(1.2*var(--bs)) solid #0000;
   outline-offset: calc(-1 * var(--s));
   
@@ -75,8 +75,8 @@ main {
 
 /* Nav */
 nav {
-  margin-top: -80px;
-  height: 75px;
+  margin-top: -20px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +98,26 @@ a {
     cursor:default;
   }
 }
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  color: red;
+  
+  .date {
+    line-height: 1.2;
+  }
+
+  .one {
+    align-self: flex-start;
+  }
+
+  .two {
+    align-self: flex-end;
+  }
+} 
 
 
 /* Intro */
