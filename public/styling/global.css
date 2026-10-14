@@ -76,45 +76,54 @@ main {
 /* Nav */
 nav {
   margin-top: -20px;
-  height: 40px;
+  min-height: 40px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  position:sticky;
+
+  /* Responsive space between navigation items */
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+
+  /* Mobile font size: 18px by default */
+  font-size: 1.125rem;
+
+  position: sticky;
+  top: 0;
 
     a {
     text-decoration: none;
     color: var(--prussian-blue);
-    transition-duration: 1s;
+    transition: color 0.2s ease;
     &:hover {
       color: var(--prussian-blue-light);
       text-decoration: underline;
     }
+    &:focus-visible {
+      outline: 2px solid var(--beige-orange-dark);
+      outline-offset: underline;
+    }
     span {
-      /* font-size: clamp(16px, 75%, 25px); */
       color: var(--prussian-blue);
       cursor: default;
     }
   }
 
   /* Phone */
-  @media (min-width: 20em) {
-    font-size: clamp(0.875rem, 75%, 1.125rem);
-  }
   @media (min-width: 26.563em) {
-    font-size: clamp(1.125rem, 75%, 1.375rem);
+    gap: clamp(0.75rem, 2vw, 1.5rem);
   }
   @media (min-width: 39.063em) {
-    font-size: clamp(1.375rem 75%, 1.563rem);
+    gap: clamp(1.5rem, 2vw, 1.75rem);
   }
   /* Tablet */
   @media (min-width: 48em) {
-    font-size: clamp(1.563rem, 75%, 1.875rem);
+    gap: clamp(1.75rem, 2vw, 2rem);
   }
   /* Laptop */
   @media (min-width: 64em) {
-    font-size: clamp(1.875rem, 75%, 2rem);
+    font-size: 1.25rem;
+    gap: clamp(1.25rem, 2vw, 2rem);
   }
 }
 
