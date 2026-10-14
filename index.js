@@ -22,18 +22,7 @@ app.set('views', './views');
 app.set('view engine', 'liquid');
 
 app.get('/', async (req, res) => {
-  // const personResponse = await fetch(apiUrl);
-  let personResponse;
-
-try {
-    personResponse = await fetch(apiUrl);
-    console.log("HTTP Status:", personResponse.status);
-} catch (error) {
-    console.error("Fetch failed:", error.message);
-    console.error("Error cause:", error.cause);
-    console.error("Error code:", error.cause?.code);
-    throw error;
-}
+  const personResponse = await fetch(apiUrl);
   const personResponseJSON = await personResponse.json();
   
   res.render('index.liquid', {
