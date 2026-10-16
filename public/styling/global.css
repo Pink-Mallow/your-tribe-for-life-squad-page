@@ -42,7 +42,7 @@ body {
   /* height: 100vh; */
   overflow-x: clip;
   font-family: fantasy;
-  font-size: 16px;
+  font-size: 1.125rem;
 
   --b: 4px;  /* border thickness*/
   --s: 25px; /* size of the corner*/
@@ -106,7 +106,7 @@ nav {
   position: sticky;
   top: 0;
 
-    a {
+  a {
     text-decoration: none;
     color: var(--prussian-blue);
     transition: color 0.2s ease;
@@ -118,13 +118,12 @@ nav {
       outline: 2px solid var(--beige-orange-dark);
       outline-offset: underline;
     }
-    span {
-      color: var(--prussian-blue);
-      cursor: default;
-    }
+  }
+  span {
+    color: var(--prussian-blue);
+    cursor: default;
   }
 
-  /* Phone */
   @media (min-width: 26.563em) {
     gap: clamp(0.75rem, 2vw, 1.5rem);
   }
@@ -147,17 +146,18 @@ nav {
   justify-content: space-between;
   width: 100%;
   margin-top: 50px;
-  
   .date {
     line-height: 1.2;
   }
-
   .one {
     align-self: flex-start;
   }
-
   .two {
     align-self: flex-end;
+  }
+  /* Laptop */
+  @media (min-width: 64em) {
+    font-size: 1.25rem;
   }
 } 
 
