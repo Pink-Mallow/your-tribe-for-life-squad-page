@@ -13,10 +13,10 @@
 /* MEDIUM */
 @font-face {
   font-family: "CellofyMedium";
-  src: url(/assets/font/Cellofy-Medium.woff2) format("woff2"),
-       url(/assets/font/Cellofy-Medium.woff)  format("woff"),
-       url(/assets/font/Cellofy-Medium.ttf)   format("truetype"),
-       url(/assets/font/Cellofy-Medium.otf)   format("opentype");
+  src: url("/assets/font/Cellofy-Medium.woff2") format("woff2"),
+       url("/assets/font/Cellofy-Medium.woff")  format("woff"),
+       url("/assets/font/Cellofy-Medium.ttf")   format("truetype"),
+       url("/assets/font/Cellofy-Medium.otf")   format("opentype");
 	font-style: normal;
 	font-weight: 500;
 	font-display: swap;
@@ -25,10 +25,10 @@
 /* BOLD */
 @font-face {
   font-family: "CellofyBold";
-  src: url(/assets/font/Cellofy-Bold.woff2) format("woff2"),
-       url(/assets/font/Cellofy-Bold.woff)  format("woff"),
-       url(/assets/font/Cellofy-Bold.ttf)   format("truetype"),
-       url(/assets/font/Cellofy-Bold.otf)   format("opentype");
+  src: url("/assets/font/Cellofy-Bold.woff2") format("woff2"),
+       url("/assets/font/Cellofy-Bold.woff")  format("woff"),
+       url("/assets/font/Cellofy-Bold.ttf")   format("truetype"),
+       url("/assets/font/Cellofy-Bold.otf")   format("opentype");
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
@@ -37,10 +37,10 @@
 /* BLACK */
 @font-face {
   font-family: "CellofyBlack";
-  src: url(/assets/font/Cellofy-Black.woff2) format("woff2"),
-       url(/assets/font/Cellofy-Black.woff)  format("woff"),
-       url(/assets/font/Cellofy-Black.ttf)   format("truetype"),
-       url(/assets/font/Cellofy-Black.otf)   format("opentype");
+  src: url("/assets/font/Cellofy-Black.woff2") format("woff2"),
+       url("/assets/font/Cellofy-Black.woff")  format("woff"),
+       url("/assets/font/Cellofy-Black.ttf")   format("truetype"),
+       url("/assets/font/Cellofy-Black.otf")   format("opentype");
 	font-style: normal;
 	font-weight: 900;
 	font-display: swap;
@@ -49,10 +49,10 @@
 /* ITALIC */
 @font-face {
   font-family: "CellofyItalic";
-  src: url(/assets/font/Cellofy-Italic.woff2) format("woff2"),
-       url(/assets/font/Cellofy-Italic.woff)  format("woff"),
-       url(/assets/font/Cellofy-Italic.ttf)   format("truetype"),
-       url(/assets/font/Cellofy-Italic.otf)   format("opentype");
+  src: url("/assets/font/Cellofy-Italic.woff2") format("woff2"),
+       url("/assets/font/Cellofy-Italic.woff")  format("woff"),
+       url("/assets/font/Cellofy-Italic.ttf")   format("truetype"),
+       url("/assets/font/Cellofy-Italic.otf")   format("opentype");
 	font-style: italic;
 	font-weight: 400;
 	font-display: swap;
@@ -61,26 +61,26 @@
 /* EXPANDED */
 @font-face {
   font-family: "CellofyExpanded";
-  src: url(/assets/font/Cellofy-Expanded.woff2) format("woff2"),
-       url(/assets/font/Cellofy-Expanded.woff)  format("woff"),
-       url(/assets/font/Cellofy-Expanded.ttf)   format("truetype"),
-       url(/assets/font/Cellofy-Expanded.otf)   format("opentype");
+  src: url("/assets/font/Cellofy-Expanded.woff2") format("woff2"),
+       url("/assets/font/Cellofy-Expanded.woff")  format("woff"),
+       url("/assets/font/Cellofy-Expanded.ttf")   format("truetype"),
+       url("/assets/font/Cellofy-Expanded.otf")   format("opentype");
 	font-variant: medium;
 }
 
 /* THIN */
 @font-face {
   font-family: "CellofyThin";
-  src: url(/assets/font/Cellofy-Thin.woff2) format("woff2"),
-       url(/assets/font/Cellofy-Thin.woff)  format("woff"),
-       url(/assets/font/Cellofy-Thin.ttf)   format("truetype"),
-       url(/assets/font/Cellofy-Thin.otf)   format("opentype");
+  src: url("/assets/font/Cellofy-Thin.woff2") format("woff2"),
+       url("/assets/font/Cellofy-Thin.woff")  format("woff"),
+       url("/assets/font/Cellofy-Thin.ttf")   format("truetype"),
+       url("/assets/font/Cellofy-Thin.otf")   format("opentype");
   font-weight: thin;   
 }
 
 :root {
 	/* Font Family */
-	--font-body: "Cellofy", 'Bodoni MT', serif; 
+	--font-body: "CellofyRegular", 'Bodoni MT', serif; 
 
 	/* Font Weights */
 	--weight-regular: 400;

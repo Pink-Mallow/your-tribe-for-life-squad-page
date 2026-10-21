@@ -35,7 +35,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "CellofyRegular", "Times New Roman", Times, serif;
+  font-family: "CellofyRegular";
   font-size: 16px;
 }
 
@@ -43,7 +43,7 @@ body, html {
 
 /* Intro */
 h1 {
-  font-family: "CellofySemiBoldSemiExp", 'Gill Sans', sans-serif;
+  font-family: "CellofyBlack";
   justify-self: center;
   align-self: center;
 
@@ -61,7 +61,7 @@ h1 {
 /* Overview */
 h2 {
   font-size: var(--h2-size);
-  font-family: "CellofyBold", 'Gill Sans', sans-serif;
+  font-family: "CellofyBold";
 }
 
 article {
@@ -89,5 +89,5 @@ img{
 
 /* Detail */
 p {
-  font-family: 
+  font-family: "CellofyRegular";
 }
