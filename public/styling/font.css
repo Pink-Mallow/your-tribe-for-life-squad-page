@@ -1,0 +1,105 @@
+/* REGULAR */
+@font-face {
+    font-family: "CellofyRegular";
+    src: url("/assets/font/Cellofy-Regular.woff2") format("woff2"),
+         url("/assets/font/Cellofy-Regular.woff") format("woff"),
+         url("/assets/font/Cellofy-Regular.ttf") format("truetype"),
+         url("/assets/font/Cellofy-Regular.otf") format("opentype");
+    font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+}
+
+/* MEDIUM */
+@font-face {
+  font-family: "CellofyMedium";
+  src: url(/assets/font/Cellofy-Medium.woff2) format("woff2"),
+       url(/assets/font/Cellofy-Medium.woff)  format("woff"),
+       url(/assets/font/Cellofy-Medium.ttf)   format("truetype"),
+       url(/assets/font/Cellofy-Medium.otf)   format("opentype");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+/* BOLD */
+@font-face {
+  font-family: "CellofyBold";
+  src: url(/assets/font/Cellofy-Bold.woff2) format("woff2"),
+       url(/assets/font/Cellofy-Bold.woff)  format("woff"),
+       url(/assets/font/Cellofy-Bold.ttf)   format("truetype"),
+       url(/assets/font/Cellofy-Bold.otf)   format("opentype");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* BLACK */
+@font-face {
+  font-family: "CellofyBlack";
+  src: url(/assets/font/Cellofy-Black.woff2) format("woff2"),
+       url(/assets/font/Cellofy-Black.woff)  format("woff"),
+       url(/assets/font/Cellofy-Black.ttf)   format("truetype"),
+       url(/assets/font/Cellofy-Black.otf)   format("opentype");
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+
+/* ITALIC */
+@font-face {
+  font-family: "CellofyItalic";
+  src: url(/assets/font/Cellofy-Italic.woff2) format("woff2"),
+       url(/assets/font/Cellofy-Italic.woff)  format("woff"),
+       url(/assets/font/Cellofy-Italic.ttf)   format("truetype"),
+       url(/assets/font/Cellofy-Italic.otf)   format("opentype");
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+}
+ 
+/* EXPANDED */
+@font-face {
+  font-family: "CellofyExpanded";
+  src: url(/assets/font/Cellofy-Expanded.woff2) format("woff2"),
+       url(/assets/font/Cellofy-Expanded.woff)  format("woff"),
+       url(/assets/font/Cellofy-Expanded.ttf)   format("truetype"),
+       url(/assets/font/Cellofy-Expanded.otf)   format("opentype");
+	font-variant: medium;
+}
+
+/* THIN */
+@font-face {
+  font-family: "CellofyThin";
+  src: url(/assets/font/Cellofy-Thin.woff2) format("woff2"),
+       url(/assets/font/Cellofy-Thin.woff)  format("woff"),
+       url(/assets/font/Cellofy-Thin.ttf)   format("truetype"),
+       url(/assets/font/Cellofy-Thin.otf)   format("opentype");
+  font-weight: thin;   
+}
+
+:root {
+	/* Font Family */
+	--font-body: "Cellofy", 'Bodoni MT', serif; 
+
+	/* Font Weights */
+	--weight-regular: 400;
+	--weight-medium: 500;
+	--weight-semibold: 600;
+	--weight-bold: 700;
+	--weight-black: 900;
+
+	/* Line heights */
+
+  /* Mobile text size */
+  --text-body: 1.125rem;
+  --text-h1: 2rem;
+  --text-h2: 1.75rem;
+  --text-h3: 1.5rem;
+  --text-h4: 1.313rem;
+  --text-h5: 1.125rem;
+  --text-h6: 1.125rem;
+  --text-label: 1rem;
+  --text-small: 0.875rem;
+  --text-button: 1.125rem;
+}
