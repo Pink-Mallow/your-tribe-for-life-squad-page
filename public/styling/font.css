@@ -89,34 +89,26 @@
 	--weight-bold: 700;
 	--weight-black: 900;
 
-	/* Line heights */
+  /* MOBILE TO DESKTOP TYPOGRAPHY SIZES */
 
-  /* Mobile text size */
-  --text-body: 1.125rem;
-  --text-h1: 3.815rem;
-  --text-h2: 3.052rem;
-  --text-h3: 2.441rem;
-  --text-h4: 1.953rem;
-  --text-h5: 1.563rem;
-  --text-h6: 1.25rem;
-  --text-label: 1rem;
-  --text-small: 0.875rem;
-  --text-button: 1rem;
+  /* Body */
+  --text-body: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
 
-  
-  /* Desktop */
-  --text-body: 1.25rem;
-  --text-h1: 11.391rem;
-  --text-h2: 7.594rem;
-  --text-h3: 5.063rem;
-  --text-h4: 3.375rem;
-  --text-h5: 2.25rem;
-  --text-h6: 1.5rem;
-  --text-label: 1.25rem;
-  --text-small: 1rem;
-  --text-button: 1.125rem;
+  /* Hero */
+  --text-hero: clamp(6.5rem, 3.5619rem + 14.0211vw, 15.625rem);
 
-  
+  /* Headings */
+  --text-h1: clamp(3.815rem, 1.648rem + 10.835vw, 11.391rem);
+  --text-h2: clamp(3.052rem, 1.7554rem + 6.4821vw, 7.594rem);
+  --text-h3: clamp(2.441rem, 1.6916rem + 3.7473vw, 5.063rem);
+  --text-h4: clamp(1.953rem, 1.5464rem + 2.033vw, 3.375rem);
+  --text-h5: clamp(1.563rem, 1.2416rem + 1.6071vw, 2.25rem);
+  --text-h6: clamp(1.25rem, 1.1429rem + 0.5357vw, 1.5rem);
+
+  /* UI */
+  --text-label: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --text-small: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+  --text-button: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
 } 
 
 h1:nth-of-type(2) {
