@@ -89,7 +89,10 @@
 	--weight-bold: 700;
 	--weight-black: 900;
 
-  /* MOBILE TO DESKTOP TYPOGRAPHY SIZES */
+  /* Line height */
+  --lh-body: 1.6;
+
+  /* MOBILE TO DESKTOP TYPOGRAPHY FONT-SIZES */
 
   /* Body */
   --text-body: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);

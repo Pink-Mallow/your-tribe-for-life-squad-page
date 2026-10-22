@@ -37,6 +37,9 @@ body, html {
   padding: 0;
   font-family: "CellofyRegular";
   font-size: var(--text-body);
+  line-height: var(--lh-body);
+  max-width: 60ch;
+  text-wrap: pretty;
 }
 
 /* Nav */
