@@ -38,6 +38,7 @@ body, html {
   font-family: "CellofyRegular";
   font-size: var(--text-body);
   line-height: var(--lh-body);
+  color: var(--prussian-blue);
   max-width: 60ch;
   text-wrap: pretty;
 }

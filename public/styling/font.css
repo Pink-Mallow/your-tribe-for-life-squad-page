@@ -112,6 +112,9 @@
   --text-label: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
   --text-small: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
   --text-button: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+
+  /* Color */
+  --text-small-grey: #3e3b3b;
 } 
 
 h1:nth-of-type(2) {
@@ -145,6 +148,7 @@ h6 {
 .small-text{
   font-size: var(--text-small);
   font-family: "CellofyThin";
+  color: var(--text-small-grey);
 }
 button {
   font-size: var(--text-button);
@@ -152,5 +156,5 @@ button {
 }
 label {
   font-size: var(--text-label);
-  font-family: "CellofyItalic";
+  font-family: "CellofyRegular";
 }
