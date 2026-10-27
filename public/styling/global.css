@@ -4,35 +4,10 @@
 }
 
 :root {
-  /* Primary Colours */
-  --prussian-blue: #14293A;
-  --lilac: #B6B5D4;
-  --beige-orange: #FFF1D6; 
 
-  /* Colour range */
-  --prussian-blue-medium: #14293A; 
-  --prussian-blue-light: #2B6491; 
-
-  --lilac-medium: #8583C7; 
-  --lilac-dark: #4844B7;
-
-  --beige-orange-medium: #FACF7B; 
-  --beige-orange-dark: #FFA903;
-
-  /* Border colour */
-  --border-colour: #8D8A88; 
-
-  /* Home Background */
-  --warm-creme: #EED3BF;
-
-  --h1-text-size: ;
-  --h2-text-size: ;
-  --h3-text-size: ;
-
-  --p-text-size: ;
 }
 
-main {
+body {
   background-color: var(--warm-creme);
 }
 

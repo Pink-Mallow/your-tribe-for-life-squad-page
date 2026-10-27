@@ -1,0 +1,191 @@
+:root { 
+ /* ==================
+     PRUSSIAN BLUE
+    ================== */
+  --prussian-blue-h: 207;
+  --prussian-blue-s: 49%;
+  --prussian-blue-l: 35%;
+
+  --prussian-blue-darkest: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 29%));
+  --prussian-blue-darker: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 20%));
+  --prussian-blue-dark: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 12%));
+  --prussian-blue: hsl(var(--prussian-blue-h) var(--prussian-blue-s) var(--prussian-blue-l));
+  --prussian-blue-light: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 10%));
+  --prussian-blue-lighter: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 23%));
+  --prussian-blue-lightest: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 40%));
+
+  /* =======
+     LILAC
+     ======= */
+
+  --lilac-h: 242;
+  --lilac-s: 27%;
+  --lilac-l: 62%;
+
+  --lilac-darkest: hsl(var(--lilac-h) calc(var(--lilac-s) + 8%) calc(var(--lilac-l) - 37%));
+  --lilac-darker: hsl(var(--lilac-h) calc(var(--lilac-s) + 5%) calc(var(--lilac-l) - 27%));
+  --lilac-dark: hsl(var(--lilac-h) calc(var(--lilac-s) + 3%) calc(var(--lilac-l) - 17%));
+  --lilac: hsl(var(--lilac-h) var(--lilac-s) var(--lilac-l));
+  --lilac-light: hsl(var(--lilac-h) calc(var(--lilac-s) + 3%) calc(var(--lilac-l) + 16%));
+  --lilac-lighter: hsl(var(--lilac-h) calc(var(--lilac-s) + 5%) calc(var(--lilac-l) + 24%));
+  --lilac-lightest: hsl(var(--lilac-h) calc(var(--lilac-s) + 8%)  calc(var(--lilac-l) + 34%));
+
+  /* ===============
+     BEIGE ORANGE
+     =============== */
+
+  --beige-orange-h: 40;
+  --beige-orange-s: 100%;
+  --beige-orange-l: 74%;
+
+  --beige-orange-darkest: hsl(calc(var(--beige-orange-h) - 5) calc(var(--beige-orange-s) - 15%) calc(var(--beige-orange-l) - 39%));
+  --beige-orange-darker: hsl(calc(var(--beige-orange-h) - 3) calc(var(--beige-orange-s) - 10%) calc(var(--beige-orange-l) - 29%));
+  --beige-orange-dark: hsl(calc(var(--beige-orange-h) - 1) calc(var(--beige-orange-s) - 5%) calc(var(--beige-orange-l) - 19%));
+  --beige-orange: hsl(var(--beige-orange-h) var(--beige-orange-s) var(--beige-orange-l));
+  --beige-orange-light: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 10%));
+  --beige-orange-lighter: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 18%));
+  --beige-orange-lightest: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 24%));
+
+  /* =================
+     NEUTRAL COLOURS
+  ==================== */
+
+  --neutral-h: 24;
+  --neutral-s: 2%;
+  --neutral-l: 54%;
+
+  --neutral-darkest: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) - 39%));
+  --neutral-dark: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) - 24%));
+  --neutral: hsl(var(--neutral-h) var(--neutral-s) var(--neutral-l));
+  --neutral-light: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) + 21%));
+  --neutral-lightest: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) + 41%));
+
+
+  /* ===================
+     BACKGROUND COLOUR
+  ====================== */
+
+  --warm-creme-h: 25;
+  --warm-creme-s: 57%;
+  --warm-creme-l: 84%;
+
+  --warm-creme: hsl(
+    var(--warm-creme-h),
+    var(--warm-creme-s),
+    var(--warm-creme-l)
+  );
+
+
+  /* ================
+     BORDER COLOUR
+     ================ */
+
+  --border-colour: var(--neutral);
+}
+
+ol {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  li {
+    width: 50px;
+    height: 50px;
+    background-color: hotpink;
+    list-style-type: none;
+  }
+}
+
+/* PERRUsSIAN BLUE */
+.pb-darkest{
+  background-color: var(--prussian-blue-darkest);
+}
+.pb-darker{
+  background-color: var(--prussian-blue-darker);
+}
+.pb-dark{
+  background-color: var(--prussian-blue-dark);
+}
+.pb{
+  background-color: var(--prussian-blue);
+}
+.pb-light{
+  background-color: var(--prussian-blue-light);
+}
+.pb-lighter{
+  background-color: var(--prussian-blue-lighter);
+}
+.pb-lightest{
+  background-color: var(--prussian-blue-lightest);
+}
+
+/* LILAC */
+.l-darkest{
+  background-color: var(--lilac-darkest);
+}
+.l-darker{
+  background-color: var(--lilac-darker);
+}
+.l-dark{
+  background-color: var(--lilac-dark);
+}
+.l{
+  background-color: var(--lilac);
+}
+.l-light{
+  background-color: var(--lilac-light);
+}
+.l-lighter{
+  background-color: var(--lilac-lighter);
+}
+.l-lightest{
+  background-color: var(--lilac-lightest);
+}
+
+/* BEIGE ORANGE */
+.bo-darkest{
+  background-color: var(--beige-orange-darkest);
+}
+.bo-darker{
+  background-color: var(--beige-orange-darker);
+}
+.bo-dark{
+  background-color: var(--beige-orange-dark);
+}
+.bo{
+  background-color: var(--beige-orange);
+}
+.bo-light{
+  background-color: var(--beige-orange-light);
+}
+.bo-lighter{
+  background-color: var(--beige-orange-lighter);
+}
+.bo-lightest{
+  background-color: var(--beige-orange-lightest);
+}
+
+/* NEUTRAL */
+.neutral-darkest{
+  background-color: var(--neutral-darkest);
+}
+.neutral-dark{
+  background-color: var(--neutral-dark);
+}
+.neutral{
+  background-color: var(--neutral);
+}
+.neutral-light{
+  background-color: var(--neutral-light);
+}
+.neutral-lightest{
+  background-color: var(--neutral-lightest);
+}
+
+.warm-creme{
+  background-color: var(--warm-creme);
+}
+.border-colour{
+  background-color: var(--border-colour);
+}
