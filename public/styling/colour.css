@@ -1,86 +1,148 @@
 :root { 
- /* ==================
+  /* ==================
      PRUSSIAN BLUE
     ================== */
-  --prussian-blue-h: 207;
-  --prussian-blue-s: 49%;
-  --prussian-blue-l: 35%;
+  /* HSL VALUE */
+  @supports (color: hsl(207 49% 35%)) {
+    :root {
+      --prussian-blue-h: 207;
+      --prussian-blue-s: 49%;
+      --prussian-blue-l: 35%;
 
-  --prussian-blue-darkest: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 29%));
-  --prussian-blue-darker: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 20%));
-  --prussian-blue-dark: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 12%));
-  --prussian-blue: hsl(var(--prussian-blue-h) var(--prussian-blue-s) var(--prussian-blue-l));
-  --prussian-blue-light: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 10%));
-  --prussian-blue-lighter: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 23%));
-  --prussian-blue-lightest: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 40%));
+      --prussian-blue-darkest: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 29%));
+      --prussian-blue-darker: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 20%));
+      --prussian-blue-dark: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) - 12%));
+      --prussian-blue: hsl(var(--prussian-blue-h) var(--prussian-blue-s) var(--prussian-blue-l));
+      --prussian-blue-light: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 10%));
+      --prussian-blue-lighter: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 23%));
+      --prussian-blue-lightest: hsl(var(--prussian-blue-h) var(--prussian-blue-s) calc(var(--prussian-blue-l) + 40%));
+    }
+  }
+
+  /* FALLBACK HEX */
+  --prussian-blue-darkest: #081017;
+  --prussian-blue-darker: #142839;
+  --prussian-blue-dark: #1E3E57;
+  --prussian-blue: #2E5E85;
+  --prussian-blue-light: #3B78AB;
+  --prussian-blue-lighter: #5799C8;
+  --prussian-blue-lightest: #A0C2DE;
 
   /* =======
      LILAC
      ======= */
+  /* HSL VALUE */
+  @supports (color: hsl(242 27% 62%)) {
+    :root {
+      --lilac-h: 242;
+      --lilac-s: 27%;
+      --lilac-l: 62%;
 
-  --lilac-h: 242;
-  --lilac-s: 27%;
-  --lilac-l: 62%;
+      --lilac-darkest: hsl(var(--lilac-h) calc(var(--lilac-s) + 8%) calc(var(--lilac-l) - 37%));
+      --lilac-darker: hsl(var(--lilac-h) calc(var(--lilac-s) + 5%) calc(var(--lilac-l) - 27%));
+      --lilac-dark: hsl(var(--lilac-h) calc(var(--lilac-s) + 3%) calc(var(--lilac-l) - 17%));
+      --lilac: hsl(var(--lilac-h) var(--lilac-s) var(--lilac-l));
+      --lilac-light: hsl(var(--lilac-h) calc(var(--lilac-s) + 3%) calc(var(--lilac-l) + 16%));
+      --lilac-lighter: hsl(var(--lilac-h) calc(var(--lilac-s) + 5%) calc(var(--lilac-l) + 24%));
+      --lilac-lightest: hsl(var(--lilac-h) calc(var(--lilac-s) + 8%) calc(var(--lilac-l) + 34%));
+    }
+  }
 
-  --lilac-darkest: hsl(var(--lilac-h) calc(var(--lilac-s) + 8%) calc(var(--lilac-l) - 37%));
-  --lilac-darker: hsl(var(--lilac-h) calc(var(--lilac-s) + 5%) calc(var(--lilac-l) - 27%));
-  --lilac-dark: hsl(var(--lilac-h) calc(var(--lilac-s) + 3%) calc(var(--lilac-l) - 17%));
-  --lilac: hsl(var(--lilac-h) var(--lilac-s) var(--lilac-l));
-  --lilac-light: hsl(var(--lilac-h) calc(var(--lilac-s) + 3%) calc(var(--lilac-l) + 16%));
-  --lilac-lighter: hsl(var(--lilac-h) calc(var(--lilac-s) + 5%) calc(var(--lilac-l) + 24%));
-  --lilac-lightest: hsl(var(--lilac-h) calc(var(--lilac-s) + 8%)  calc(var(--lilac-l) + 34%));
+  /* FALLBACK HEX */
+  --lilac-darkest: #2B2956;
+  --lilac-darker: #3F3D76;
+  --lilac-dark: #535095;
+  --lilac: #8684B8;
+  --lilac-light: #B7B6D8;
+  --lilac-lighter: #D1D0E7;
+  --lilac-lightest: #F1F1F8;
 
   /* ===============
      BEIGE ORANGE
      =============== */
+  /* HSL VALUE */
+  @supports (color: hsl(40 100% 74%)) {
+    :root {
+      --beige-orange-h: 40;
+      --beige-orange-s: 100%;
+      --beige-orange-l: 74%;
 
-  --beige-orange-h: 40;
-  --beige-orange-s: 100%;
-  --beige-orange-l: 74%;
+      --beige-orange-darkest: hsl(calc(var(--beige-orange-h) - 5) calc(var(--beige-orange-s) - 15%) calc(var(--beige-orange-l) - 39%));
+      --beige-orange-darker: hsl(calc(var(--beige-orange-h) - 3) calc(var(--beige-orange-s) - 10%) calc(var(--beige-orange-l) - 29%));
+      --beige-orange-dark: hsl(calc(var(--beige-orange-h) - 1) calc(var(--beige-orange-s) - 5%) calc(var(--beige-orange-l) - 19%));
+      --beige-orange: hsl(var(--beige-orange-h) var(--beige-orange-s) var(--beige-orange-l));
+      --beige-orange-light: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 10%));
+      --beige-orange-lighter: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 18%));
+      --beige-orange-lightest: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 24%));
+    }
+  }
 
-  --beige-orange-darkest: hsl(calc(var(--beige-orange-h) - 5) calc(var(--beige-orange-s) - 15%) calc(var(--beige-orange-l) - 39%));
-  --beige-orange-darker: hsl(calc(var(--beige-orange-h) - 3) calc(var(--beige-orange-s) - 10%) calc(var(--beige-orange-l) - 29%));
-  --beige-orange-dark: hsl(calc(var(--beige-orange-h) - 1) calc(var(--beige-orange-s) - 5%) calc(var(--beige-orange-l) - 19%));
-  --beige-orange: hsl(var(--beige-orange-h) var(--beige-orange-s) var(--beige-orange-l));
-  --beige-orange-light: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 10%));
-  --beige-orange-lighter: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 18%));
-  --beige-orange-lightest: hsl(var(--beige-orange-h) var(--beige-orange-s) calc(var(--beige-orange-l) + 24%));
+  /* FALLBACK HEX */
+  --beige-orange-darkest: #A5660D;
+  --beige-orange-darker: #DA8B0B;
+  --beige-orange-dark: #F9AD1F;
+  --beige-orange: #FFD37A;
+  --beige-orange-light: #FFE4AD;
+  --beige-orange-lighter: #FFF1D6;
+  --beige-orange-lightest: #FFFCF5;
 
   /* =================
      NEUTRAL COLOURS
   ==================== */
+  /* HSL VALUE */
+  @supports (color: hsl(24 2% 54%)) {
+    :root {
+      --neutral-h: 24;
+      --neutral-s: 2%;
+      --neutral-l: 54%;
 
-  --neutral-h: 24;
-  --neutral-s: 2%;
-  --neutral-l: 54%;
+      --neutral-darkest: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) - 39%));
+      --neutral-dark: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) - 24%));
+      --neutral: hsl(var(--neutral-h) var(--neutral-s) var(--neutral-l));
+      --neutral-light: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) + 21%));
+      --neutral-lightest: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) + 41%));
+    }
+  }
 
-  --neutral-darkest: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) - 39%));
-  --neutral-dark: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) - 24%));
-  --neutral: hsl(var(--neutral-h) var(--neutral-s) var(--neutral-l));
-  --neutral-light: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) + 21%));
-  --neutral-lightest: hsl(var(--neutral-h) var(--neutral-s) calc(var(--neutral-l) + 41%));
-
+  /* FALLBACK HEX */
+  --neutral-darkest: #272625;
+  --neutral-dark: #4e4c4b;
+  --neutral: #8C8987;
+  --neutral-light: #C1BFBE;
+  --neutral-lightest: #F3F2F2;
 
   /* ===================
      BACKGROUND COLOUR
   ====================== */
+  /* HSL VALUE */
+  @supports (color: hsl(25 57% 84%)) {
+    :root {
+      --warm-creme-h: 25;
+      --warm-creme-s: 57%;
+      --warm-creme-l: 84%;
 
-  --warm-creme-h: 25;
-  --warm-creme-s: 57%;
-  --warm-creme-l: 84%;
+      --warm-creme: hsl(var(--warm-creme-h),
+          var(--warm-creme-s),
+          var(--warm-creme-l));
+    }
+  }
 
-  --warm-creme: hsl(
-    var(--warm-creme-h),
-    var(--warm-creme-s),
-    var(--warm-creme-l)
-  );
+    /* FALLBACK HEX */
+  --warm-creme: #EDD2BF;
 
 
   /* ================
      BORDER COLOUR
      ================ */
+  /* HSL VALUE */
+  @supports (color: hsl(24 2% 54%)) {
+    :root {
+      --border-colour: var(--neutral);
+    }
+  }
 
-  --border-colour: var(--neutral);
+  /* FALLBACK HEX */
+  --border-colour: #8C8987;
 }
 
 ol {
